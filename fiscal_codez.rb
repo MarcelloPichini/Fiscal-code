@@ -110,7 +110,7 @@ while i == true do
 	place = gets.chomp.upcase
 	
 begin
-	con = Mysql.new 'localhost', 'root', 'macelaa', 'ruby_for'
+	con = Mysql.new 'localhost', 'user', 'password', 'database'
 	h = con.query("select town_code from fiscal_code where town_name = \"#{place}\"")
 	j = h.fetch_row
 		
