@@ -1,0 +1,12 @@
+fiscal_code_calculator
+Program that calculates the italian fiscal code
+
+1)The program uses the following data for MySql access: user: script pass: password so create a user like this or change the source code where needed to use a different user.
+
+2)It's necessary to create a MySQL database (the program is setted to use: fiscal_code_db) on your computer that will contain the data for the cadastral code of Italian towns: CREATE DATABASE fiscal_code_db; so create a database like this or change the source code where needed to use a different database.
+
+3)Make sure that the user has permissions to modify the database: GRANT ALL ON fiscal_code_db.* to script@localhost;
+
+4)Then run populator.rb to insert the data of the file town_list.csv in the MySql database.
+
+5)Finally you can run fiscal_code.rb
